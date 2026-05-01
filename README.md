@@ -11,7 +11,6 @@ The code is used to:
 ## Files
 - `plot_right_half_normalized_numerical_range.m`
 - `solve_min_normalized_real.m`
-- `run_twoport_case.m` (if included)
 
 ## How to use
 Run the MATLAB scripts from the MATLAB working directory. The optimisation routine

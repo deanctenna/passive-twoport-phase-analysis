@@ -45,4 +45,23 @@ To compute the worst-case scalar quantity, run:
 ```matlab
 A = [1 2+1i; -3i 4];
 [eta_star, x_star, history] = solve_min_normalized_real(A);
+```
+You can also pass options to the function, for example:
 
+```matlab
+A = [1 2+1i; -3i 4];
+opts = struct('display', false, 'max_outer', 20, 'n_theta', 41, 'n_phi', 81, 'n_starts', 5);
+[eta_star, x_star, history] = solve_min_normalized_real(A, opts);
+```
+
+## Notes
+
+The optimisation routine is written for the 2x2 case used in the dissertation. The plotting routine is sampling-based, so the quality of the plotted set depends on the number of random samples.
+
+## Future Improvements
+
+Possible future improvements include:
+
+- adding a single script to reproduce the main dissertation figures;
+- improving the optimisation routine;
+- extending the method to larger multiport networks.

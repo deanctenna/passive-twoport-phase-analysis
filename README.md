@@ -38,3 +38,11 @@ To plot the right-half normalised numerical range, run:
 
 ```matlab
 plot_right_half_normalized_numerical_range
+The script will ask you to enter a 2x2 complex matrix.
+
+To compute the worst-case scalar quantity, run:
+
+```matlab
+A = [1 2+1i; -3i 4];
+[eta_star, x_star, history] = solve_min_normalized_real(A);
+
